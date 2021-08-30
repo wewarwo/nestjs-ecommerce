@@ -19,8 +19,8 @@ export class Product {
   @Prop()
   name: string;
 
-  @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }] })
-  child: Product[];
+  @Prop()
+  child: string[];
 }
 
-export const CatSchema = SchemaFactory.createForClass(Product);
+export const ProductSchema = SchemaFactory.createForClass(Product);

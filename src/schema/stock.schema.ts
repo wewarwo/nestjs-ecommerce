@@ -9,7 +9,10 @@ export class Stock {
   sku: string;
 
   @Prop()
+  price: string;
+
+  @Prop()
   quantity: number;
 }
 
-export const CatSchema = SchemaFactory.createForClass(Stock);
+export const StockSchema = SchemaFactory.createForClass(Stock);
